@@ -1,6 +1,7 @@
 node_modules/
 .next/
 .netlify/
+.netlify-upload/
 .npm-cache/
 .git/
 *.log
