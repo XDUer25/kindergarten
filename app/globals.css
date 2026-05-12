@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --sky: #72c8ee;
+  --sky-soft: #e8f8ff;
+  --sun: #ffe58a;
+  --sun-soft: #fff8d8;
+  --leaf: #78bf62;
+  --ink: #1f3440;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fbfdff;
+  color: var(--ink);
+  font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--sun);
+  color: var(--ink);
+}
+
+.soft-shadow {
+  box-shadow: 0 24px 70px rgba(76, 147, 184, 0.16);
+}
+
+.section-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.image-mask {
+  -webkit-mask-image: linear-gradient(180deg, #000 80%, rgba(0, 0, 0, 0.74));
+  mask-image: linear-gradient(180deg, #000 80%, rgba(0, 0, 0, 0.74));
+}
